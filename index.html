@@ -19,18 +19,102 @@
         
         <h2>FASE + Arbolado + Plotly</h2>
         
-        <h3>Paso 1</h3>
-        <p>Obtención de los datos.</p>
-        <
-        <h3>Paso 2</h3>
-        <h3>Paso 3</h3>
-        <h3>Paso 4</h3>
-        <h3>Paso 5</h3>
         <h3>Producto Terminado</h3>
         <img src="./img/Rivadavia.png">
+        
+        <h3>Paso 1</h3>
+        <h4>Obtención de los datos</h4>
+        <p>Bajar CSV de los árboles del Parque Rivadavia de la carpeta de <a href="https://github.com/gcba/cursoISC/tree/master/data">data del repositorio de este taller</a></p>
+        <p>La manera más fácil de copiar los datos es verlos en <i>Raw</i></p>
+        <img src="./img/github-csv.png">
+        <p>Y luego seleccionar todo <code>Ctrl+A</code>, copiarlo <code>Ctrl+C</code> en cualquier editor de texto, y guardarlo en un archivo.</p>
+        <img src="./img/github-csv-raw.png">
+        <img src="./img/csv-save.png">
+
+        <h3>Paso 2</h3>
+        <h4>Carga de datos en Plotly</h4>
+        <img src="./img/plotly-new-grid.png">
+        <img src="./img/plotly-open-grid.png">
+
+        <h3>Paso 3</h3>
+        <h4>Bubble Chart simple</h4>
+        <img src="./img/plotly-bubble-1.png">
+        <img src="./img/plotly-bubble-x-y.png">
+        <img src="./img/plotly-bubble-size.png">
+        <img src="./img/plotly-rivadavia-no-cat.png">
+        <img src="./img/gmaps-rivadavia.png">
+
+        <h3>Paso 4</h3>
+        <h4>Customización de Bubble Chart</h4>
+        <img src="./img/plotly-bubble-group-by.png">
+        <img src="./img/plotly-rivadavia-cat.png">
+        <img src="./img/plotly-no-legend.png">
+        <img src="./img/plotly-rivadavia-cat-no-legend.png">
+
+        <h3>Paso 5</h3>
+        <h4>Insight!</h4>
+        <img src="./img/plotly-magnolias-insight.png">        
+        <img src="./img/street-view-rivadavia.png">
+
+        <h3>Producto Terminado</h3>
+        <img src="./img/Rivadavia.png">
+        
         <hr>
+
+        <h2>Datos geográficos + CartoDB</h2>
+        <h3>Producto Terminado</h3>
+        <img src="./img/carto-terminado-unis.png">
+        
+        <h3>Paso 1</h3>
+        <h4>Obtención de los datos</h4>
+        <p>Bajar CSVs de la página de <a href="http://data.buenosaires.gob.ar">Data Buenos Aires</a></p>
+        
+        <img src="./img/data-comunas.png">
+        <img src="./img/data-unis.png">
+
+        <h3>Paso 2</h3>
+        <h4>Carga de datos de universidades en CartoDB</h4>
+        <img src="./img/agregar-data.png">
+        <img src="./img/carto-unis-puntos.png">
+
+        <h3>Paso 3</h3>
+        <h4>Agregar segunda capa de comunas al mapa</h4>
+        <img src="./img/carto-create-maps.png">
+        <img src="./img/carto-add-layer.png">
+
+        <h3>Paso 4</h3>
+        <h4>Editar data de comunas</h4>
+        <p>Agregar una columna que cuente cuantas universidades hay por comuna</p>
+        <img src="./img/carto-add-column.png">
+        <img src="./img/carto-type-column.png">
+        <img src="./img/carto-sql-window.png">
+
+        <p>Aplicar formula que calcula la intersección</p>
+        <pre><code data-type="sql">UPDATE polygon_table SET point_count = (SELECT count(*)
+FROM points_table WHERE ST_Intersects(points_table.the_geom, polygon_table.the_geom))</code></pre>
+
+        <img src="./img/carto-inteseccion-puntos.png">
+        
+        <h3>Paso 5</h3>
+        <h4>Customizar mapa para ver la distribución por comunas</h4>
+        
+        <p>Usar filtro de cloropleth</p>
+        <img src="./img/carto-filtro.png">
+        
+        <p>Y activar info windows para que nos cuente info cuando hacemos hover</p>
+        <img src="./img/carto-hover.png">
+   
+        <h3>Paso 6</h3>
+        <h4>Publicar nuestros insights!</h4>
+
+        <img src="./img/carto-publicar.png">
+
+        <hr>
+
         <h2>Referencias</h2>
-        <p><a href="http://docs.cartodb.com/tutorials/counting_points.html">Counting points in CartoDB</a></p>
+        <p><a href="http://help.plot.ly/tutorials/">Tutoriales en Plotly</a></p>
+        <p><a href="http://docs.cartodb.com/tutorials.html">Tutoriales en CartoDB</a></p>
+        <p><a href="http://docs.cartodb.com/tutorials/counting_points.html">Contar puntos de intersección en CartoDB</a></p>
     </div>
 </div>
 </body>
