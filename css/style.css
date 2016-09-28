@@ -1,5 +1,39 @@
+.center {
+    text-align:center;
+    display: block;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+div.ref {
+    padding-bottom: 20px;
+}
+
 img {
     width: 100%;
     margin: 10px 0;
     border-radius: 4px;
+}
+
+img#gba, img#mod {
+    width: 20%;
+    margin: 0% 40%;
+}
+
+div#mod, div#gba {
+    width: 100%;
+    clear: both;
+}
+
+div#mod {
+    padding: 15px 0px 25px 0px;
+    background-color: #eeeeee;
+}
+
+div#gba {
+    padding: 10px 0px;
+    background-color: #f6f6f6;
+    margin-top: 10px;
 }

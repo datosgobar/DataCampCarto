@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Curso ISC Intro Viz Data</title>
+    <title>La magia de Carto</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
     <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
@@ -14,17 +14,18 @@
 <body>
 <div class="container-fluid">
     <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-        <h1>Interpretando Datos</h1>
+        <h1>La Magia de CARTO</h1>
+        <h3>¡Manos a la obra!</h3>
         <hr>
         
-        <h2>FASE + Arbolado + Plotly</h2>
+        <h2>Producto Terminado</h2>
         
-        <h3>Producto Terminado</h3>
-        <img src="./img/Rivadavia.png">
+        <img src="./img/final_cant_puentes.png">
+        <img src="./img/final_per_capita.png">
         
         <h3>Paso 1</h3>
         <h4>Obtención de los datos</h4>
-        <p>Bajar CSV de los árboles del Parque Rivadavia de la carpeta de <a href="https://github.com/gcba/cursoISC/tree/master/data">data del repositorio de este taller</a></p>
+        <p><i>Opción 1:</i> Bajar datos de carpeta de <a href="https://github.com/gobabiertoAR/DataCampCarto/tree/master/data">data del repositorio de este taller</a></p>
         <p>La manera más fácil de copiar los datos es verlos en <i>Raw</i></p>
         <img src="./img/github-csv.png">
         <p>Y luego seleccionar todo <code>Ctrl+A</code>, copiarlo <code>Ctrl+C</code> en cualquier editor de texto, y guardarlo en un archivo.</p>
@@ -111,10 +112,22 @@ FROM points_table WHERE ST_Intersects(points_table.the_geom, polygon_table.the_g
 
         <hr>
 
-        <h2>Referencias</h2>
-        <p><a href="http://help.plot.ly/tutorials/">Tutoriales en Plotly</a></p>
-        <p><a href="http://docs.cartodb.com/tutorials.html">Tutoriales en CartoDB</a></p>
-        <p><a href="http://docs.cartodb.com/tutorials/counting_points.html">Contar puntos de intersección en CartoDB</a></p>
+        <div class="ref">
+            <h2>Referencias</h2>
+            <p><a href="http://help.plot.ly/tutorials/">Tutoriales en Plotly</a></p>
+            <p><a href="http://docs.cartodb.com/tutorials.html">Tutoriales en CartoDB</a></p>
+            <p><a href="http://docs.cartodb.com/tutorials/counting_points.html">Contar puntos de intersección en CartoDB</a></p>
+        </div>
+    </div>
+    <div id="gba">
+        <h2 class="center normal">Martín Alalú</h2>
+        <a class="center" href="www.twitter.com/martinalalu">@martinalalu</a>
+        <img id="gba" src="./img/logo_gba.svg">
+    </div>
+    <div id="mod">
+        <h2 class="center normal">Pili Mayora</h2>
+        <a class="center" href="www.twitter.com/pilimayora">@pilimayora</a>
+        <img id="mod" src="./img/logo_ministerio_footer.svg">
     </div>
 </div>
 </body>
