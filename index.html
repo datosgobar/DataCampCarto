@@ -12,121 +12,141 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
 </head>
 <body>
+<div id="header">
+    <h1>La Magia de CARTO</h1>
+    <h3>¡Manos a la obra!</h3>
+</div>
 <div class="container-fluid">
-    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
-        <h1>La Magia de CARTO</h1>
-        <h3>¡Manos a la obra!</h3>
-        <hr>
-        
+    <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">        
         <h2>Producto Terminado</h2>
         
-        <img src="./img/final_cant_puentes.png">
-        <img src="./img/final_per_capita.png">
+        <img src="./img/final-cant-puentes.png">
+        <img src="./img/final-per-capita.png">
         
         <h3>Paso 1</h3>
-        <h4>Obtención de los datos</h4>
-        <p><i>Opción 1:</i> Bajar datos de carpeta de <a href="https://github.com/gobabiertoAR/DataCampCarto/tree/master/data">data del repositorio de este taller</a></p>
-        <p>La manera más fácil de copiar los datos es verlos en <i>Raw</i></p>
-        <img src="./img/github-csv.png">
-        <p>Y luego seleccionar todo <code>Ctrl+A</code>, copiarlo <code>Ctrl+C</code> en cualquier editor de texto, y guardarlo en un archivo.</p>
-        <img src="./img/github-csv-raw.png">
-        <img src="./img/csv-save.png">
+        <h4>Crear cuenta en CARTO</h4>    
+        <p>Entrar <a href="http://www.carto.com">al sitio de CARTO</a> y crear cuenta gratuita.</p>
+
+        <img src="./img/carto-signup.png">
+        <img src="./img/carto-pricing.png">
 
         <h3>Paso 2</h3>
-        <h4>Carga de datos en Plotly</h4>
-        <img src="./img/plotly-new-grid.png">
-        <img src="./img/plotly-open-grid.png">
-
+        <h4>Obtener los datos de provincias y puentes</h4>
+        <p><i>Opción 1:</i> Bajar datos de carpeta de <a href="https://github.com/gobabiertoAR/DataCampCarto/tree/master/data">data del repositorio de este taller.</a></p>
+        <img src="./img/download-data.png">
+        <p><i>Opción 2:</i> Bajar datos del <a href="http://www.ign.gob.ar/sig">sitio de IGN.</a>
+        <img src="./img/data-ign.png"> 
+        
         <h3>Paso 3</h3>
-        <h4>Bubble Chart simple</h4>
-        <img src="./img/plotly-bubble-1.png">
-        <img src="./img/plotly-bubble-x-y.png">
-        <img src="./img/plotly-bubble-size.png">
-        <img src="./img/plotly-rivadavia-no-cat.png">
-        <img src="./img/gmaps-rivadavia.png">
+        <h4>Cargar los datasets en CARTO</h4>
+        
+        <p>Ir a la sección de /Datasets de tu cuenta.</p>
+
+        <img src="./img/your-datasets.png">
+
+        <p>Agregar nuevo dataset</p>
+
+        <img src="./img/new-dataset.png">
+        <img src="./img/connect-dataset.png">
+
+        <p>Repetir este paso para provincias, puentes y población por provincia.</p>
 
         <h3>Paso 4</h3>
-        <h4>Customización de Bubble Chart</h4>
-        <img src="./img/plotly-bubble-group-by.png">
-        <img src="./img/plotly-rivadavia-cat.png">
-        <img src="./img/plotly-no-legend.png">
-        <img src="./img/plotly-rivadavia-cat-no-legend.png">
+        <h4>Verificar que se haya cargado espectacularmente</h4>
+
+        <img src="./img/provincias-table.png">
+        <img src="./img/provincias-map.png">
+        <img src="./img/puentes-table.png">
+        <img src="./img/puentes-map.png">
 
         <h3>Paso 5</h3>
-        <h4>Insight!</h4>
-        <img src="./img/plotly-magnolias-insight.png">        
-        <img src="./img/street-view-rivadavia.png">
+        <h4>Mergear datos de provincias</h4>
 
-        <h3>Producto Terminado</h3>
-        <img src="./img/Rivadavia.png">
+        <img src="./img/merge-tabla.png">
+        <img src="./img/merge-elegir-join.png">
+        <img src="./img/merge-elegir-match.png">
+        <img src="./img/merge-elegir-columnas.png">
+        <img src="./img/merge-exito.png">
+
+        <h3>Paso 6</h3>
+        <h4>Crear mapa</h4>
+
+        <img src="./img/your-maps.png">
+        <img src="./img/nuevo-mapa.png">
         
-        <hr>
+        <p>Agregar capa de provincias y capa de puentes</p>
+        <img src="./img/mapa-agregar-datasets.png">
+        <img src="./img/mapa-sin-interseccion.png">
 
-        <h2>Datos geográficos + CartoDB</h2>
-        <h3>Producto Terminado</h3>
-        <img src="./img/carto-terminado-unis.png">
-        
-        <h3>Paso 1</h3>
-        <h4>Obtención de los datos</h4>
-        <p>Bajar CSVs de la página de <a href="http://data.buenosaires.gob.ar">Data Buenos Aires</a></p>
-        
-        <img src="./img/data-comunas.png">
-        <img src="./img/data-unis.png">
+        <h3>Paso 7</h3>
+        <h4>Calcular cantidad de puentes por provincia</h4>
 
-        <h3>Paso 2</h3>
-        <h4>Carga de datos de universidades en CartoDB</h4>
-        <img src="./img/agregar-data.png">
-        <img src="./img/carto-unis-puntos.png">
+        <p>Agregar columna numérica para calcular la cantidad de puentes por provincia</p>
 
-        <h3>Paso 3</h3>
-        <h4>Agregar segunda capa de comunas al mapa</h4>
-        <img src="./img/carto-create-maps.png">
-        <img src="./img/carto-add-layer.png">
+        <img src="./img/add-new-column.png">
+        <img src="./img/crear-col-cant-puentes.png">
 
-        <h3>Paso 4</h3>
-        <h4>Editar data de comunas</h4>
-        <p>Agregar una columna que cuente cuantas universidades hay por comuna</p>
-        <img src="./img/carto-add-column.png">
-        <img src="./img/carto-type-column.png">
-        <img src="./img/carto-sql-window.png">
+        <p>Escribir <i>mini</i> SQL para calcular la intersección entre puntos y polígonos (puentes y provincias).</p>
 
-        <p>Aplicar formula que calcula la intersección</p>
         <pre><code data-type="sql">UPDATE polygon_table SET point_count = (SELECT count(*)
 FROM points_table WHERE ST_Intersects(points_table.the_geom, polygon_table.the_geom))</code></pre>
 
-        <img src="./img/carto-inteseccion-puntos.png">
-        
-        <h3>Paso 5</h3>
-        <h4>Customizar mapa para ver la distribución por comunas</h4>
-        
-        <p>Usar filtro de cloropleth</p>
-        <img src="./img/carto-filtro.png">
-        
-        <p>Y activar info windows para que nos cuente info cuando hacemos hover</p>
-        <img src="./img/carto-hover.png">
-   
-        <h3>Paso 6</h3>
-        <h4>Publicar nuestros insights!</h4>
+        <img src="./img/sql-interseccion.png">
+        <img src="./img/cant-puentes-exito.png">
 
-        <img src="./img/carto-publicar.png">
+        <h3>Paso 8</h3>
+        <h4>Visualizar la distribución de puentes en el país</h4>
+
+        <p>Esconder la capa de puentes, ya que tenemos todo calculado en la capa de provincias.</p>
+        <img src="./img/esconder-puentes.png">        
+
+        <p>Elegir opción de <b>Cloropleth</b> para la columna que contiene la cantidad de puentes</p>
+        <img src="./img/choose-cloropleth.png">
+
+        <p>Customizar las <i>info windows</i> para ver información de las provincias en click o hover</p>
+        <img src="./img/edit-info-window.png">
+
+        <h3>Paso 9</h3>
+        <h4>Calcular puentes per capita por provincia</h4>
+
+        <p>Agregar columna numérica para calcular la cantidad de puentes per capita por provincia</p>
+        <img src="./img/new-column-per-capita.png">
+
+        <p>Escribir <i>mini</i> SQL para calcular los valores de esta columna</p>
+        <pre><code data-type="sql">UPDATE table SET column = (puentes / poblacion)</code></pre>
+        <img src="./img/sql-per-capita.png">
+        <img src="./img/per-capita-exito.png">
+
+        <h3>Paso 10</h3>
+        <h4>Visualizar la cantidad de puentes per capita por provincia</h4>
+
+        <p>Elegir opción de <b>Cloropleth</b> para la columna agregada en el paso anterior</p>
+        <img src="./img/cloropleth-per-capita.png">
+        <p>Customizar las <i>info windows</i></p>
+        <img src="./img/map-per-capita.png">
+
+        <h3>Paso 11</h3>
+        <h4>Compartí tu mapa</h4>
+
+        <img src="./img/publish.png">
+        <img src="./img/share.png">
 
         <hr>
 
         <div class="ref">
             <h2>Referencias</h2>
-            <p><a href="http://help.plot.ly/tutorials/">Tutoriales en Plotly</a></p>
-            <p><a href="http://docs.cartodb.com/tutorials.html">Tutoriales en CartoDB</a></p>
-            <p><a href="http://docs.cartodb.com/tutorials/counting_points.html">Contar puntos de intersección en CartoDB</a></p>
+            <p><a href="https://carto.com/docs/tutorials/">Tutoriales en CartoDB</a></p>
+            <p><a href="https://carto.com/docs/tutorials/counting_points/">Contar puntos de intersección en CartoDB</a></p>
         </div>
     </div>
     <div id="gba">
         <h2 class="center normal">Martín Alalú</h2>
-        <a class="center" href="www.twitter.com/martinalalu">@martinalalu</a>
+        <a class="center" href="http://www.twitter.com/martinalalu">@martinalalu</a>
         <img id="gba" src="./img/logo_gba.svg">
     </div>
     <div id="mod">
         <h2 class="center normal">Pili Mayora</h2>
-        <a class="center" href="www.twitter.com/pilimayora">@pilimayora</a>
+        <a class="center" href="http://www.twitter.com/pilimayora">@pilimayora</a>
         <img id="mod" src="./img/logo_ministerio_footer.svg">
     </div>
 </div>

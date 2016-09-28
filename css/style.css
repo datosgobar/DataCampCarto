@@ -17,19 +17,28 @@ img {
     border-radius: 4px;
 }
 
-img#gba, img#mod {
+img#gba {
     width: 20%;
     margin: 0% 40%;
 }
 
-div#mod, div#gba {
+img#mod {
+    width: 30%;
+    margin: 0% 35%;
+}
+
+div#mod, div#gba, div#header {
     width: 100%;
     clear: both;
 }
 
-div#mod {
+div#mod, div#header {
     padding: 15px 0px 25px 0px;
     background-color: #eeeeee;
+}
+
+div#header {
+    text-align: center;
 }
 
 div#gba {
